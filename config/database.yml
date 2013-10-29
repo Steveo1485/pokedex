@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  database: pokedex_development
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  database: pokedex_test
+  pool: 5
+  timeout: 5000
