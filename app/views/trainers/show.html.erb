@@ -1,3 +1,9 @@
-<h1>Pokemon Trainer <%= @trainer.name %></h1>
+<h1>Welcome, Pokemon Trainer <%= @trainer.name %>!</h1>
 
+<h2>Please choose your starter Pokemon:</h2>
+
+<%= link_to image_tag("bulbasaur.png") %>
+<%= link_to image_tag("charmander.png") %>
+<%= link_to image_tag("squirtle.png") %>
+<br/>
 <%= link_to "I'm a Magikarp. I want out.", trainer_path(@trainer), method: "delete" %>
