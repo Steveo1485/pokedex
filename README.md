@@ -8,7 +8,6 @@
 * User can choose one of three starting Pokemon
 
 # Next Steps:
-
-* Nested resources for trainer/:id/pokemon
+* Feature test to select Bulbasaur
 * "pokemon#create" action for selecting starter
 * Add pokemon to database with trainer_id
