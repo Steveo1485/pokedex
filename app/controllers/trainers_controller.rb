@@ -9,7 +9,11 @@ class TrainersController < ApplicationController
 
   def create
     @trainer = Trainer.new(trainer_params)
-    redirect_to @trainer if @trainer.save
+    if @trainer.save
+      redirect_to @trainer
+    else
+      render :new
+    end
   end
 
   def show
