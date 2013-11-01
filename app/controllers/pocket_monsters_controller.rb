@@ -1,12 +1,15 @@
 class PocketMonstersController < ApplicationController
 
   def index
-    @pokemon = PocketMonster.all
+    @trainer = Trainer.find(params[:trainer_id])
   end
 
   def create
-    pocket_monster = params[:pocket_monster]
-    PocketMonster.create(trainer_id: params[:trainer_id], species: pocket_monster[:species])
-    redirect_to(trainer_pocket_monsters_path(pocket_monster.trainer_id))
+    new_pokemon = PocketMonster.new(trainer_id: params[:trainer_id], species: params[:species])
+    if new_pokemon.save
+      redirect_to trainer_pocket_monsters_path(new_pokemon.trainer_id)
+    else
+      redirect_to root_path
+    end
   end
 end

@@ -7,11 +7,11 @@ feature 'Trainer' do
       visit(root_path)
     end
 
-    it "should have link to start journey" do
+    scenario "should have link to start journey" do
       page.should have_link("Enter the Pokemon League")
     end
 
-    it "can become a new trainer by clicking on the enter link" do
+    scenario "can become a new trainer by clicking on the enter link" do
       click_link("Enter the Pokemon League")
       current_path.should eq(new_trainer_path)
     end
@@ -22,13 +22,13 @@ feature 'Trainer' do
       visit(new_trainer_path)
     end
 
-    it "should allow user to start journey" do
+    scenario "should allow user to start journey" do
       fill_in("trainer_name", with: "Gary")
       click_button("Begin Your Journey")
       current_path.should eq(trainer_path(1))
     end
 
-    it "should allow user to opt out of the league" do
+    scenario "should allow user to opt out of the league" do
       Trainer.create(name: "Gary")
       visit(trainer_path(1))
       click_link("I'm a Magikarp. I want out.")

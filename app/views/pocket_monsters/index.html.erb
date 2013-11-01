@@ -1,0 +1,9 @@
+<% @trainer.pocket_monsters.each do |pokemon| %>
+    <%= image_tag("#{pokemon.species.downcase}.png", :alt => "Bulbasaur") %><br/>
+
+    <div>You picked <%= pokemon.species %>!</div>
+<% end %>
+
+<audio loop id="background_audio" autoplay="autoplay">
+  <source src="/assets/sound/trainer_profile.mp3" type="audio/mpeg" />
+</audio>
