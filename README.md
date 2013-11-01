@@ -5,9 +5,16 @@
 
 #Release 2
 
-* User can choose one of three starting Pokemon
+* User can choose one of three starting Pokemon after signing up
 
-# Next Steps:
-* Feature test to select Bulbasaur
-* "pokemon#create" action for selecting starter
-* Add pokemon to database with trainer_id
+#Release 3
+
+* Validations for species per user to prevent repeat starter pokemon
+* Implement starter pokemon screen with an AJAX call
+* User can see a table of all of their Pokemon
+* User can click a button to get a random Pokemon (AJAX call)
+* User can click a 
+
+#Relase 4
+
+* User authorization and authentication
