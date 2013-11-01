@@ -10,7 +10,7 @@ describe PocketMonstersController do
 
   it "#create" do
     expect {
-      post :create, trainer_id: trainer.id, pocket_monster: {species: "Bulbasaur"}
+      post :create, trainer_id: trainer.id, species: "Bulbasaur"
     }.to change { PocketMonster.count }.by(1)
   end
 end
