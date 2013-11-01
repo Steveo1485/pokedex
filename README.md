@@ -9,11 +9,11 @@
 
 #Release 3
 
+* User can click a specific pokemon to get more information about it
 * Validations for species per user to prevent repeat starter pokemon
-* Implement starter pokemon screen with an AJAX call
 * User can see a table of all of their Pokemon
+* Implement starter pokemon screen with an AJAX call
 * User can click a button to get a random Pokemon (AJAX call)
-* User can click a 
 
 #Relase 4
 
