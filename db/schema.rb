@@ -9,16 +9,24 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended that you check this file into your version control system.
+# It's strongly attr_reader :attr_namesecommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131030053250) do
+ActiveRecord::Schema.define(version: 20131102205822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "pocket_monsters", force: true do |t|
     t.integer  "trainer_id"
-    t.string   "species"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "species_id"
+  end
+
+  create_table "pokemon_entries", force: true do |t|
+    t.string   "species_name"
+    t.integer  "height"
+    t.integer  "weight"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

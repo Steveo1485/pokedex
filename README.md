@@ -9,12 +9,13 @@
 
 #Release 3
 
+* Implement starter pokemon screen with an AJAX call
 * User can click a specific pokemon to get more information about it
 * Validations for species per user to prevent repeat starter pokemon
 * User can see a table of all of their Pokemon
-* Implement starter pokemon screen with an AJAX call
 * User can click a button to get a random Pokemon (AJAX call)
 
 #Relase 4
 
 * User authorization and authentication
+* Randomize button is grayed out if trainer has already gotten a pokemon
