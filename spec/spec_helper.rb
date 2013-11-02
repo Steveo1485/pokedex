@@ -18,8 +18,6 @@ RSpec.configure do |config|
 
   config.mock_with :rspec
 
-  # config.use_transactional_fixtures = true
-
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)

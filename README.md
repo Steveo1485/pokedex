@@ -18,3 +18,4 @@
 #Relase 4
 
 * User authorization and authentication
+* Randomize button is grayed out if trainer has already gotten a pokemon

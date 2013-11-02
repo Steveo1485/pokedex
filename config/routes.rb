@@ -8,3 +8,4 @@ Pokedex::Application.routes.draw do
     resources :pocket_monsters, only: [:index, :create]
   end
 end
+
