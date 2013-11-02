@@ -2,8 +2,8 @@
 
 <h2>Please choose your starter Pokemon:</h2>
 
-<%= link_to image_tag("bulbasaur.png"), trainer_pocket_monsters_path(@trainer.id, species: "Bulbasaur"), method: :post %>
-<%= link_to image_tag("charmander.png"), trainer_pocket_monsters_path(@trainer.id, species: "Charmander"), method: :post %>
-<%= link_to image_tag("squirtle.png"), trainer_pocket_monsters_path(@trainer.id, species: "Squirtle"), method: :post %>
+<%= link_to image_tag("bulbasaur.png"), trainer_pocket_monsters_path(@trainer.id, species_id: 1), method: :post %>
+<%= link_to image_tag("charmander.png"), trainer_pocket_monsters_path(@trainer.id, species_id: 4), method: :post %>
+<%= link_to image_tag("squirtle.png"), trainer_pocket_monsters_path(@trainer.id, species_id: 7), method: :post %>
 <br/>
 <%= link_to "I'm a Magikarp. I want out.", trainer_path(@trainer), method: "delete" %>

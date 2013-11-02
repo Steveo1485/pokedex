@@ -3,7 +3,8 @@ require 'spec_helper'
 feature "picking a starter pokemon" do
 
   context "trainer picks bulbasaur" do
-    let(:trainer) {trainer = Trainer.create(name: "Gary")}
+    let!(:trainer) {Trainer.create(name: "Gary")}
+    let!(:pokemon_entry) {PokemonEntry.create(species_name: "Bulbasaur", height: 7, weight: 69)}
 
     scenario "trainer is taken to their list of pokemon" do
       visit trainer_path(trainer.id)

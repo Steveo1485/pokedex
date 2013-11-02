@@ -1,7 +1,8 @@
 <% @trainer.pocket_monsters.each do |pokemon| %>
-    <%= image_tag("#{pokemon.species.downcase}.png", :alt => "Bulbasaur") %><br/>
+    <% pokemon_name = PokemonEntry.find(pokemon.species_id).species_name %>
+    <%= image_tag("#{pokemon_name}.png", :alt => "Bulbasaur") %><br/>
 
-    <div>You picked <%= pokemon.species %>!</div>
+    <div>You picked a <%= "#{pokemon_name.capitalize}" %>!</div>
 <% end %>
 
 <audio loop id="background_audio" autoplay="autoplay">

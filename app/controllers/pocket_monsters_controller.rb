@@ -5,7 +5,7 @@ class PocketMonstersController < ApplicationController
   end
 
   def create
-    new_pokemon = PocketMonster.new(trainer_id: params[:trainer_id], species: params[:species])
+    new_pokemon = PocketMonster.new(trainer_id: params[:trainer_id], species_id: params[:species_id])
     if new_pokemon.save
       redirect_to trainer_pocket_monsters_path(new_pokemon.trainer_id)
     else
