@@ -3,15 +3,11 @@
     <h1 id="trainer-name">Pokémon Trainer <%= @trainer.name %></h1>
   </div>
 
-  <%= button_to "I Want a New Pokemon", { action: "create", species_id: @random_pkmn_id } %>
+  <%= button_to "I Want a New Pokemon", { action: "create" }, { form_class: 'random_pokemon' }%>
 
-  <div id="all-entries">
+  <div id="all-entries" >
     <% @trainer.pocket_monsters.sort_by { |pokemon| pokemon.species_id }.each do |pokemon| %>
-      <% pokemon_name = PokemonEntry.find(pokemon.species_id).species_name %>
-      <div class="pokedex-entry">
-        <div class="entry-header"><h2>No. <%= pokemon.species_id %> - <%= pokemon_name.capitalize %></h2></div>
-        <%= image_tag("#{pokemon_name}.png", :alt => "#{pokemon_name}", :class => "pokedex-img") %>
-      </div>
+      <%= render "pokedex_entry", :pokemon => pokemon %>
     <% end %>
   </div>
 
