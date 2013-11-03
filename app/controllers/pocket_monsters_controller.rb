@@ -1,7 +1,9 @@
 class PocketMonstersController < ApplicationController
+  helper_method :random_pokemon_id
 
   def index
     @trainer = Trainer.find(params[:trainer_id])
+    @random_pkmn_id = random_pokemon_id
   end
 
   def create
