@@ -1,12 +1,27 @@
-<% @trainer.pocket_monsters.each do |pokemon| %>
-    <% pokemon_name = PokemonEntry.find(pokemon.species_id).species_name %>
-    <%= image_tag("#{pokemon_name}.png", :alt => "#{pokemon_name}") %><br/>
+<div class="container" id="pokedex">
+  <div id="trainer-info">
+    <h1 id="trainer-name">Pokémon Trainer <%= @trainer.name %></h1>
+  </div>
 
-    <div>You picked a <%= "#{pokemon_name.capitalize}" %>!</div>
-<% end %>
+  <%= button_to "I Want a New Pokemon", { action: "create", species_id: random_pokemon_id } %>
 
-<%= button_to "I Want a New Pokemon", { action: "create", species_id: (rand(151)+1) } %>
+  <div id="all-entries">
+    <% @trainer.pocket_monsters.sort_by { |pokemon| pokemon.species_id }.each do |pokemon| %>
+      <% pokemon_name = PokemonEntry.find(pokemon.species_id).species_name %>
+      <div class="pokedex-entry">
+        <div class="entry-header"><h2>No. <%= pokemon.species_id %> - <%= pokemon_name.capitalize %></h2></div>
+        <%= image_tag("#{pokemon_name}.png", :alt => "#{pokemon_name}", :class => "pokedex-img") %>
+      </div>
+    <% end %>
+  </div>
+
+</div>
 
 <audio loop id="background_audio" autoplay="autoplay">
   <source src="/assets/sound/trainer_profile.mp3" type="audio/mpeg" />
 </audio>
+
+
+
+
+
