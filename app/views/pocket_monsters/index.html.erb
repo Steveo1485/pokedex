@@ -3,7 +3,7 @@
     <h1 id="trainer-name">Pokémon Trainer <%= @trainer.name %></h1>
   </div>
 
-  <%= button_to "I Want a New Pokemon", { action: "create", species_id: random_pokemon_id } %>
+  <%= button_to "I Want a New Pokemon", { action: "create", species_id: @random_pkmn_id } %>
 
   <div id="all-entries">
     <% @trainer.pocket_monsters.sort_by { |pokemon| pokemon.species_id }.each do |pokemon| %>
