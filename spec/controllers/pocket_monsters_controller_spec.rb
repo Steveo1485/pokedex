@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe PocketMonstersController do
-  let(:trainer) { Trainer.create(name: "Gary") }
+  let!(:trainer) { Trainer.create(name: "Gary") }
 
   it "#index" do
     get :index, trainer_id: trainer.id
