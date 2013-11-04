@@ -1,0 +1,5 @@
+<div class="pokedex-entry">
+  <% pokemon_name = PokemonEntry.find(pokemon.species_id).species_name %>
+  <div class="entry-header"><h2>No. <%= pokemon.species_id %> - <%= pokemon_name.capitalize %></h2></div>
+  <%= image_tag("#{pokemon_name}.png", :alt => "#{pokemon_name}", :class => "pokedex-img") %>
+</div>

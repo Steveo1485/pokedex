@@ -26,6 +26,13 @@ class TrainersController < ApplicationController
     redirect_to root_path
   end
 
+  def starter
+    new_pokemon = PocketMonster.new(trainer_id: params[:trainer_id], species_id: params[:species_id])
+    if new_pokemon.save
+      redirect_to trainer_pocket_monsters_path(new_pokemon.trainer_id)
+    end
+  end
+
   private
   def trainer_params
     params.require(:trainer).permit(:name)
