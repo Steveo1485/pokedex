@@ -1,3 +1,5 @@
+/*GLOBAL*/
+
 html {
   background-color: #FD6639;
   background: -webkit-linear-gradient(top, #DC0A2D, #6D0415);
@@ -5,6 +7,10 @@ html {
   min-height: 100%
 }
 
+form:focus{
+  outline: 0;
+}
+/*TITLE SCREEN */
 .pokemon-logo{
   width: 50%;
   height: 50%;
@@ -15,16 +21,45 @@ html {
 }
 
 .pokeball{
-  width: 5%;
-  height: 5%;
+  width: 4.75%;
+  height: 4.75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1#on-rails{
-  font-size: 4em;
+#on-rails{
+  font-size: 5em;
   text-align: center;
   font-family: 'Share Tech Mono', sans-serif;
 }
 
+.enter-site{
+  width: 50%;
+  text-decoration: none;
+  font-size: 4.5em;
+  font-style: italic;
+  text-align: center;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 10px;
+  border-radius: 30px;
+  border-spacing: 50px;
+  border-style: groove;
+  border-color: #B38F01;
+  font-family: 'Share Tech Mono', sans-serif;
+  background: -webkit-repeating-linear-gradient(#3464ae, #006aaf);
+  display: block;
+}
+
+/*BEGIN JOURNEY*/
+.welcome{
+  font-family: 
+  text-align: center;
+  margin-top: 7.5%
+}
+
+/*POKEDEX*/
 .container#pokedex{
   width: 100%;
   margin: 0 auto;
@@ -51,6 +86,7 @@ h1#trainer-name {
 }
 
 input {
+  outline: none;
   background: #6eb2e0;
   background: -webkit-gradient(linear, left top, left bottom, from(#28AAFD), to(#14567F));
   background: -webkit-linear-gradient(top, #28AAFD, #14567F);
@@ -61,6 +97,7 @@ input {
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
+  border-color: black;
   text-shadow: rgba(0,0,0,.4) 0 1px 0;
   color: white;
   font-size: 20px;
@@ -117,3 +154,32 @@ img.pokedex-img {
   }
 }
 
+/*.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px; 
+    border: 1px solid black;
+}
+
+#slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}*/
+
+/*HARD CODE POKEBALL SIZE */
