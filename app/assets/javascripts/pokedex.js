@@ -24,13 +24,6 @@ var RandomizeHandler = {
 
 
 
-
-
-
-
-
-
-
 $(document).ready(function() {
   RandomizeHandler.init()
 })
