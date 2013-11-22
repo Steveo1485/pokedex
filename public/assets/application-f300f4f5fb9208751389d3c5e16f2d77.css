@@ -1,0 +1,200 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*GLOBAL*/
+
+
+html {
+  background-color: #FD6639;
+  background: -webkit-linear-gradient(top, #DC0A2D, #6D0415);
+  height: auto;
+  min-height: 100%
+}
+
+form:focus{
+  outline: 0;
+}
+/*TITLE SCREEN */
+.pokemon-logo{
+  width: 50%;
+  height: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+  display: block;
+}
+
+.pokeball{
+  width: 4.75%;
+  height: 4.75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#on-rails{
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+
+.enter-site{
+  width: 50%;
+  text-decoration: none;
+  font-size: 4.5em;
+  font-style: italic;
+  text-align: center;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 10px;
+  border-radius: 30px;
+  border-spacing: 50px;
+  border-style: groove;
+  border-color: #B38F01;
+  font-family: 'Share Tech Mono', sans-serif;
+  background: -webkit-repeating-linear-gradient(#3464ae, #006aaf);
+  display: block;
+}
+
+/*BEGIN JOURNEY*/
+.welcome{
+  font-family: 
+  text-align: center;
+  margin-top: 7.5%
+}
+
+/*POKEDEX*/
+.container#pokedex{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 100%;
+}
+
+#trainer-name{
+  width: 50%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 10px;
+  border-color: #DDDDDD;
+  border-style: ridge;
+  background-color: #28AAFD;
+  background: -webkit-linear-gradient(top, #28AAFD, #467BB8);
+}
+
+h1#trainer-name {
+  padding: 1%;
+  text-align: center;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+
+input {
+  outline: none;
+  background: #6eb2e0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#28AAFD), to(#14567F));
+  background: -webkit-linear-gradient(top, #28AAFD, #14567F);
+  background: -moz-linear-gradient(top, #28AAFD, #14567F);
+  background: -ms-linear-gradient(top, #28AAFD, #14567F);
+  background: -o-linear-gradient(top, #28AAFD, #14567F);
+  padding: 10px 20px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border-color: black;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 20px;
+  font-family: 'Share Tech Mono', sans-serif;
+  text-decoration: none;
+  vertical-align: middle;
+   }
+input:hover {
+  color: #fff;
+}
+input:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+
+.pokedex-entry:first-of-type {
+  margin-left: 5px;
+}
+
+.pokedex-entry:last-of-type {
+  margin-right: 5px;
+}
+
+.pokedex-entry {
+  float: left;
+  background-color: #7F7F7F;
+  background: -webkit-radial-gradient(#7F7F7F,#545454);
+  margin: 5px;
+  border-color: #232323;
+  border-width: 4px;
+  border-style: groove;
+  min-width: 15%;
+  min-height: 15%
+}
+
+img.pokedex-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  max-height: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .pokedex-entry {
+    width: 25%;
+  }
+}
+
+/*.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px; 
+    border: 1px solid black;
+}
+
+#slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}*/
+
+/*HARD CODE POKEBALL SIZE */
