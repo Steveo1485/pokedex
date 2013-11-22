@@ -1,21 +1,13 @@
-#Release 1
+#Pokedex
 
-* User can become a trainer
-* User can stop being a trainer
+Pokedex is a social game that allows users to:
 
-#Release 2
+1. Collect new Pokemon
+2. Trade their Pokemon with other users
+3. Battle with other trainers using their Pokemon
 
-* User can choose one of three starting Pokemon after signing up
+##Current Release
 
-#Release 3
+Currently, trainers can sign up and begin collecting Pokemon.
 
-* Implement starter pokemon screen with an AJAX call
-* User can click a specific pokemon to get more information about it
-* Validations for species per user to prevent repeat starter pokemon
-* User can see a table of all of their Pokemon
-* User can click a button to get a random Pokemon (AJAX call)
-
-#Relase 4
-
-* User authorization and authentication
-* Randomize button is grayed out if trainer has already gotten a pokemon
+Please be aware that the app itself is a bit large, due to embedded music and images.
