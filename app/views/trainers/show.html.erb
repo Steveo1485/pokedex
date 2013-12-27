@@ -1,10 +1,13 @@
-<h1>Welcome, Pokemon Trainer <%= @trainer.name %>!</h1>
+<h1 id="starter-headline">Welcome, Pokemon Trainer <%= @trainer.name %>!</h1>
 
-<h2>Please choose your starter Pokemon:</h2>
+<h2 id="choose-starter">Please choose your starter Pokemon:</h2>
 
-<%= link_to image_tag("bulbasaur.png"), trainer_starter_path(@trainer.id, species_id: 1), controller: :trainers, action: :starter, method: :post %>
-<%= link_to image_tag("charmander.png"), trainer_starter_path(@trainer.id, species_id: 4), controller: :trainers, action: :starter, method: :post %>
-<%= link_to image_tag("squirtle.png"), trainer_starter_path(@trainer.id, species_id: 7), controller: :trainers, action: :starter, method: :post %>
+<div id="starters-container">
+	<div id="starters">
+		<%= link_to image_tag("bulbasaur.png"), trainer_starter_path(@trainer.id, species_id: 1), controller: :trainers, action: :starter, method: :post %>
+		<%= link_to image_tag("charmander.png"), trainer_starter_path(@trainer.id, species_id: 4), controller: :trainers, action: :starter, method: :post %>
+		<%= link_to image_tag("squirtle.png"), trainer_starter_path(@trainer.id, species_id: 7), controller: :trainers, action: :starter, method: :post %>
+	</div>
+</div>
 
-<br/>
-<%= link_to "I'm a Magikarp. I want out.", trainer_path(@trainer), method: "delete" %>
+<%= link_to "I'm a Magikarp. I want out.", trainer_path(@trainer), method: "delete", id: "quit" %>
