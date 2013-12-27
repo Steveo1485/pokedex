@@ -12,7 +12,6 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'pg'
-gem 'therubyracer'
 
 group :doc do
   gem 'sdoc', require: false
