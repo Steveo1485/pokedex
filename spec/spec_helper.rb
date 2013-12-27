@@ -21,12 +21,6 @@ RSpec.configure do |config|
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
-    csv_text = File.read('./lib/assets/pokemon.csv')
-    csv = CSV.parse(csv_text, :headers => true)
-    csv.each do |row|
-      pokemon_entry = row.to_hash
-      PokemonEntry.create!(species_name: pokemon_entry["identifier"], height: pokemon_entry["height"], weight: pokemon_entry["weight"], rarity: pokemon_entry["rarity"])
-    end
   end
 
   config.after(:each) do
@@ -40,6 +34,12 @@ RSpec.configure do |config|
 
   config.before(:each) do
     DatabaseCleaner.start
+    csv_text = File.read('./lib/assets/pokemon.csv')
+    csv = CSV.parse(csv_text, :headers => true)
+    csv.each do |row|
+      pokemon_entry = row.to_hash
+      PokemonEntry.create!(species_name: pokemon_entry["identifier"], height: pokemon_entry["height"], weight: pokemon_entry["weight"], rarity: pokemon_entry["rarity"])
+    end
   end
 
   config.after(:each) do
