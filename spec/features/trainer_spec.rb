@@ -25,7 +25,8 @@ feature 'Trainer' do
     scenario "should allow user to start journey" do
       fill_in("name-input", with: "Gary")
       click_button("Begin Your Journey")
-      current_path.should eq(trainer_path(1))
+      current_path.should eq(trainer_path(Trainer.last.id))
+      Trainer.last.name.should eq("Gary")
     end
 
     scenario "should allow user to opt out of the league" do
