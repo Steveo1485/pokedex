@@ -13,7 +13,7 @@ feature "picking a starter pokemon" do
     end
 
     scenario "trainer sees bulbasaur on their list of pokemon" do
-      visit trainer_path(trainer.id)
+      visit trainer_choose_starter_path(trainer.id)
       click_link "Bulbasaur"
       expect(page).to have_content("Bulbasaur")
     end
