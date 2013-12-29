@@ -20,9 +20,9 @@ describe TrainersController do
     end
   end
 
-  it "#show" do
+  it "#choose_starter" do
     trainer = Trainer.create(name: "Gary")
-    get :show, id: trainer.id
+    get :choose_starter, trainer_id: trainer.id
     response.status.should eq(200)
   end
 
