@@ -6,14 +6,14 @@ class TrainersController < ApplicationController
   def create
     @trainer = Trainer.new(trainer_params)
     if @trainer.save
-      redirect_to @trainer
+      redirect_to trainer_choose_starter_path(@trainer)
     else
       render :new
     end
   end
 
-  def show
-    @trainer = Trainer.find(params[:id])
+  def choose_starter
+    @trainer = Trainer.find(params[:trainer_id])
   end
 
   def destroy

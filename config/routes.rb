@@ -5,6 +5,7 @@ Pokedex::Application.routes.draw do
   root 'pokedex#index'
 
   resources :trainers do
+    get :choose_starter
     resources :pocket_monsters, only: [:index, :create] do
       post :starter
     end
