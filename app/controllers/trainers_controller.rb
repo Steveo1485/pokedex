@@ -17,8 +17,7 @@ class TrainersController < ApplicationController
   end
 
   def destroy
-    @trainer = Trainer.find(params[:id])
-    @trainer.destroy
+    Trainer.destroy(params[:id])
     redirect_to root_path
   end
 
