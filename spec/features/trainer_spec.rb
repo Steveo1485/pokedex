@@ -29,6 +29,12 @@ feature 'Trainer' do
       Trainer.last.name.should eq("Lt. Surge")
     end
 
+    scenario "should not allow user to start journey without a name" do
+      click_button("Begin Your Journey")
+      page.should have_button("Begin Your Journey")
+      page.should have_content("Welcome to Pallet Town")
+    end
+
     scenario "should allow user to opt out of the league" do
       Trainer.create(name: "Gary")
       visit(trainer_choose_starter_path(Trainer.last.id))
