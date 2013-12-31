@@ -1,4 +1,4 @@
-/*GLOBAL*/
+//GLOBAL//
 
 html {
   background-color: #FD6639;
@@ -10,7 +10,8 @@ html {
 form:focus{
   outline: 0;
 }
-/*TITLE SCREEN */
+
+//TITLE SCREEN //
 .pokemon-logo{
   width: 50%;
   height: 50%;
@@ -52,7 +53,7 @@ form:focus{
   display: block;
 }
 
-/*BEGIN JOURNEY*/
+//BEGIN JOURNEY//
 .welcome{
   font-family: 'Share Tech Mono', sans-serif;
   font-size: 3em;
@@ -107,7 +108,7 @@ h2#choose-starter {
   padding-top: 20px;
 }
 
-/*POKEDEX*/
+//POKEDEX//
 .container#pokedex{
   width: 100%;
   margin: 0 auto;
@@ -152,7 +153,7 @@ input {
   font-family: 'Share Tech Mono', sans-serif;
   text-decoration: none;
   vertical-align: middle;
-   }
+}
 input:hover {
   color: #fff;
 }
@@ -201,33 +202,3 @@ img.pokedex-img {
     width: 25%;
   }
 }
-
-/*.wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100px;
-    height: 100px; 
-    border: 1px solid black;
-}
-
-#slide {
-    position: absolute;
-    left: -100px;
-    width: 100px;
-    height: 100px;
-    background: blue;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
-}
-
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide {
-    100% { left: 0; }
-}*/
-
-/*HARD CODE POKEBALL SIZE */
