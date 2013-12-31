@@ -11,47 +11,8 @@ form:focus{
   outline: 0;
 }
 
-//TITLE SCREEN //
-.pokemon-logo{
-  width: 50%;
-  height: 50%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5%;
-  display: block;
-}
-
-.pokeball{
-  width: 4.75%;
-  height: 4.75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#on-rails{
-  font-size: 5em;
-  text-align: center;
-  font-family: 'Share Tech Mono', sans-serif;
-}
-
-.enter-site{
-  width: 50%;
-  text-decoration: none;
-  font-size: 4.5em;
-  font-style: italic;
-  text-align: center;
-  color: black;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 10px;
-  border-radius: 30px;
-  border-spacing: 50px;
-  border-style: groove;
-  border-color: #B38F01;
-  font-family: 'Share Tech Mono', sans-serif;
-  background: -webkit-repeating-linear-gradient(#3464ae, #006aaf);
-  display: block;
-}
+//LANDING PAGE//
+@import "landing";
 
 //BEGIN JOURNEY//
 .welcome{
