@@ -12,27 +12,8 @@
  *= require_tree .
  */
 
- //GLOBAL//
-
- html {
-   background-color: #FD6639;
-   background: -webkit-linear-gradient(top, #DC0A2D, #6D0415);
-   height: auto;
-   min-height: 100%
- }
-
- form:focus{
-   outline: 0;
- }
-
-//LANDING PAGE//
+@import "global";
 @import "landing";
-
-//BEGIN JOURNEY//
 @import "signup";
-
-//STARTER//
 @import "starter";
-
-//POKEDEX//
 @import "pokedex";
