@@ -35,18 +35,20 @@ feature 'Trainer' do
       page.should have_content("Welcome to Pallet Town")
     end
 
-    scenario "should allow user to opt out of the league with confirmation" do
-      Trainer.create(name: "Gary")
-      visit(trainer_choose_starter_path(Trainer.last.id))
+    scenario "should allow user to opt out of the league with confirmation", js: true do
+      fill_in("name-input", with: "Sabrina")
+      click_button("Begin Your Journey")
       click_link("I'm a Magikarp. I want out.")
-      current_path.should eq(root_path)
+      page.driver.browser.switch_to.alert.accept
+      page.should have_link("Enter the Pokémon League")
     end
 
-    scenario "shouldn't destroy user if they deny opt out confirmation" do
-      Trainer.create(name: "Gary")
-      visit(trainer_choose_starter_path(Trainer.last.id))
+    scenario "shouldn't destroy user if they deny opt out confirmation", js: true do
+      fill_in("name-input", with: "Koga")
+      click_button("Begin Your Journey")
       click_link("I'm a Magikarp. I want out.")
-      current_path.should eq(trainer_choose_starter_path(Trainer.last.id))
+      page.driver.browser.switch_to.alert.dismiss
+      page.should have_content("Welcome, Pokemon Trainer Koga!")
     end
   end
 end
