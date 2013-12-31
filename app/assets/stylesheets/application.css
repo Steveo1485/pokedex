@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+
+//LANDING PAGE//
+@import "landing";
+
+//BEGIN JOURNEY//
+@import "signup";
+
+//STARTER//
+@import "starter";
