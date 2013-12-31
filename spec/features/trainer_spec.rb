@@ -35,11 +35,18 @@ feature 'Trainer' do
       page.should have_content("Welcome to Pallet Town")
     end
 
-    scenario "should allow user to opt out of the league" do
+    scenario "should allow user to opt out of the league with confirmation" do
       Trainer.create(name: "Gary")
       visit(trainer_choose_starter_path(Trainer.last.id))
       click_link("I'm a Magikarp. I want out.")
       current_path.should eq(root_path)
+    end
+
+    scenario "shouldn't destroy user if they deny opt out confirmation" do
+      Trainer.create(name: "Gary")
+      visit(trainer_choose_starter_path(Trainer.last.id))
+      click_link("I'm a Magikarp. I want out.")
+      current_path.should eq(trainer_choose_starter_path(Trainer.last.id))
     end
   end
 end
