@@ -1,5 +1,4 @@
 class PocketMonstersController < ApplicationController
-  include PocketMonstersHelper
 
   def index
     @trainer = Trainer.find(params[:trainer_id])
@@ -7,7 +6,7 @@ class PocketMonstersController < ApplicationController
 
   def create
     new_pokemon = PocketMonster.new(trainer_id: params[:trainer_id],
-                                     species_id: random_pokemon_id)
+                                     species_id: PokemonEntry.random_pokemon_id)
     if new_pokemon.save
       render :json => { pokemon_entry: render_to_string(partial: "pokedex_entry", locals: { pokemon: new_pokemon})}
     else
