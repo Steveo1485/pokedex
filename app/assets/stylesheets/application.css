@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+@import "global";
+@import "landing";
+@import "signup";
+@import "starter";
+@import "pokedex";

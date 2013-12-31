@@ -1,0 +1,93 @@
+.container#pokedex{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 100%;
+}
+
+#trainer-name{
+  width: 50%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 10px;
+  border-color: #DDDDDD;
+  border-style: ridge;
+  background-color: #28AAFD;
+  background: -webkit-linear-gradient(top, #28AAFD, #467BB8);
+}
+
+h1#trainer-name {
+  padding: 1%;
+  text-align: center;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+
+input {
+  outline: none;
+  background: #6eb2e0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#28AAFD), to(#14567F));
+  background: -webkit-linear-gradient(top, #28AAFD, #14567F);
+  background: -moz-linear-gradient(top, #28AAFD, #14567F);
+  background: -ms-linear-gradient(top, #28AAFD, #14567F);
+  background: -o-linear-gradient(top, #28AAFD, #14567F);
+  padding: 10px 20px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border-color: black;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 20px;
+  font-family: 'Share Tech Mono', sans-serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+input:hover {
+  color: #fff;
+}
+input:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+
+.pokedex-entry:first-of-type {
+  margin-left: 5px;
+}
+
+.pokedex-entry:last-of-type {
+  margin-right: 5px;
+}
+
+.pokedex-entry {
+  float: left;
+  background-color: #7F7F7F;
+  background: -webkit-radial-gradient(#7F7F7F,#545454);
+  margin: 5px;
+  border-color: #232323;
+  border-width: 4px;
+  border-style: groove;
+  min-width: 15%;
+  min-height: 15%
+}
+
+img.pokedex-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  max-height: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .pokedex-entry {
+    width: 25%;
+  }
+}
