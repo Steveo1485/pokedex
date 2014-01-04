@@ -12,15 +12,14 @@
 }
 
 #on-rails {
-  font-size: 5em;
   text-align: center;
-  font-family: 'Share Tech Mono', sans-serif;
+  font: 4em 'Share Tech Mono', sans-serif;
 }
 
 .enter-site {
   width: 50%;
   text-decoration: none;
-  font-size: 4em;
+  font: 4em 'Share Tech Mono', sans-serif;
   text-align: center;
   color: black;
   margin: 0 auto;
@@ -29,7 +28,6 @@
   border-spacing: 50px;
   border-style: groove;
   border-color: #B38F01;
-  font-family: 'Share Tech Mono', sans-serif;
   background: -webkit-repeating-linear-gradient(#3464ae, #006aaf);
   display: block;
 }
