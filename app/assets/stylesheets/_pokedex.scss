@@ -89,7 +89,8 @@ img.pokedex-img {
 }
 
 @media screen and (max-width: 1100px) {
-  .pokedex-entry {
-    width: 25%;
+
+  #trainer-name {
+    width: 50%;
   }
 }
