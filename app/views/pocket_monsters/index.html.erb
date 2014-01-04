@@ -1,10 +1,11 @@
+<div id="trainer-info">
+  <h1 id="trainer-name">Pokémon Trainer <%= @trainer.name %></h1>
+</div>
+
 <div class="container" id="pokedex">
-  <div id="trainer-info">
-    <h1 id="trainer-name">Pokémon Trainer <%= @trainer.name %></h1>
-  </div>
 
   <%= button_to "I Want a New Pokemon", { action: "create" }, { form_class: 'random_pokemon', remote: true }%>
-
+  
   <div id="all-entries" >
     <% @trainer.pocket_monsters.sort_by { |pokemon| pokemon.species_id }.each do |pokemon| %>
       <%= render "pokedex_entry", :pokemon => pokemon %>
