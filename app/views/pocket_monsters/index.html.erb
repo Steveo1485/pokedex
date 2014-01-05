@@ -5,6 +5,8 @@
 <div class="container" id="pokedex">
 
   <%= button_to "I Want a New Pokemon", { action: "create" }, { form_class: 'random_pokemon', remote: true }%>
+
+  <%= button_to "Sort Pokemon", {}, { form_class: 'sort-pokemon'} %>
   
   <div id="all-entries" >
     <% @trainer.pocket_monsters.sort_by { |pokemon| pokemon.species_id }.each do |pokemon| %>
