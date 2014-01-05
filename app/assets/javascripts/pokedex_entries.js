@@ -5,6 +5,12 @@ var randomizeHandler = {
   }
 };
 
+function sortPokemon(e){
+	e.preventDefault();
+	$("#all-entries>div").tsort({attr:"id"});
+}
+
 $(document).ready(function() {
   $('form.random_pokemon').on('ajax:success', randomizeHandler.prependPokemon);
+  $('form.sort-pokemon').submit(sortPokemon);
 });
