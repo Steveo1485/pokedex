@@ -1,39 +1,30 @@
+$game-font: 4em 'Share Tech Mono', sans-serif;
+
 .pokemon-logo {
   width: 50%;
   height: 50%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5%;
+  margin: 5% auto 0;
   display: block;
 }
-
 .pokeball {
   width: 4.75%;
   height: 4.75%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
-
 #on-rails {
-  font-size: 5em;
   text-align: center;
-  font-family: 'Share Tech Mono', sans-serif;
+  font: $game-font;
 }
-
 .enter-site {
   width: 50%;
   text-decoration: none;
-  font-size: 4em;
+  font: $game-font;
   text-align: center;
   color: black;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 10px;
+  margin: 0 auto;
+  border: 10px groove #B38F01;
   border-radius: 30px;
   border-spacing: 50px;
-  border-style: groove;
-  border-color: #B38F01;
-  font-family: 'Share Tech Mono', sans-serif;
   background: -webkit-repeating-linear-gradient(#3464ae, #006aaf);
   display: block;
 }
