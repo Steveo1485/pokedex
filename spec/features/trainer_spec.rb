@@ -50,5 +50,14 @@ feature 'Trainer' do
       page.driver.browser.switch_to.alert.dismiss
       current_path.should eq(trainer_choose_starter_path(Trainer.last.id))
     end
+
+    scenario "should allow user to leave league on Pokedex page with confirmation", js: true do
+        Trainer.create(name: "Gary")
+        visit(trainer_choose_starter_path(Trainer.last.id))
+        click_link("Bulbasaur")
+        click_link("I'm a Magikarp. I want out.")
+        page.driver.browser.switch_to.alert.accept
+        current_path.should eq(root_path)
+    end
   end
 end
