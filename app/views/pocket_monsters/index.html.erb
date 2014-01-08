@@ -7,6 +7,8 @@
   <%= button_to "I Want a New Pokemon", { action: "create" }, { form_class: 'random_pokemon', remote: true }%>
 
   <%= button_to "Sort Pokemon", {}, { form_class: 'sort-pokemon'} %>
+
+  <%= link_to "I'm a Magikarp. I want out.", trainer_path(@trainer), method: "delete", id: "quit", data: { confirm: "Are you sure you want to leave the Pokémon League and delete your account?" } %>
   
   <div id="all-entries" >
     <% @trainer.pocket_monsters.sort_by { |pokemon| pokemon.species_id }.each do |pokemon| %>
@@ -15,8 +17,6 @@
   </div>
 
 </div>
-
-<%= link_to "I'm a Magikarp. I want out.", trainer_path(@trainer), method: "delete", id: "quit", data: { confirm: "Are you sure you want to leave the Pokémon League and delete your account?" } %>
 
 <!-- <audio loop id="background_audio" autoplay="autoplay">
   <source src="/assets/sound/trainer_profile.mp3" type="audio/mpeg" />
