@@ -1,4 +1,4 @@
-$game-font: 4em 'Share Tech Mono', sans-serif;
+$game-font: bold 4em 'Share Tech Mono';
 
 .pokemon-logo {
   width: 50%;
@@ -19,6 +19,7 @@ $game-font: 4em 'Share Tech Mono', sans-serif;
   width: 50%;
   text-decoration: none;
   font: $game-font;
+  font-size: 3.5em;
   text-align: center;
   color: black;
   margin: 0 auto;
