@@ -5,6 +5,7 @@ $(document).ready(function() {
 var pokedexEntryModal = {
 
   displayModal: function() {
-    console.log("you clicked me")
+  	var name = this.alt.toUpperCase()
+	alert(name)
   }
 };
