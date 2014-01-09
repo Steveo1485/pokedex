@@ -1,3 +1,12 @@
 .entry-modal {
 	display: none;
+	position: fixed;
+	top: 20;
+	left: 25%;
+	background-color: #7F7F7F;
+	background: -webkit-radial-gradient(#7F7F7F,#545454);
+	border-color: #232323;
+	border-width: 4px;
+	border-style: groove;
+	min-width: 20em;
 }
