@@ -1,34 +1,25 @@
 h1#starter-headline {
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: 3em;
   text-align: center;
-  font-style: italic;
+  font: bold italic 3em 'Share Tech Mono';
 }
-
 h2#choose-starter {
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: 1.75em;
   text-align: center;
+  font: bold 1.75em 'Share Tech Mono';
 }
-
 #starters-container {
   width: 100%;
 }
-
 #starters {
   text-align: center;
   margin: 0 auto;
 }
-
 #starters img {
   padding: 20px;
 }
-
 #quit {
-  display: block;
-  font-family: 'Share Tech Mono', sans-serif;
-  font-size: .75em;
   text-align: center;
+  font: bold 0.75em 'Share Tech Mono';
   color: black;
-  padding-top: 20px;
+  margin-top: 40px;
+  display: block;
 }
