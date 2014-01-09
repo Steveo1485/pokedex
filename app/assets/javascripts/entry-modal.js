@@ -5,7 +5,8 @@ $(document).ready(function() {
 var pokedexEntryModal = {
 
   displayModal: function() {
-  	var name = this.alt.toUpperCase()
-	alert(name)
+  var pokemonName = this.alt.toUpperCase()
+  $('.modal-name').text(pokemonName)
+  $('.entry-modal').css("display","block")
   }
 };
