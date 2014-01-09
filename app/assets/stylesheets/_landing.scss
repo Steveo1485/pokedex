@@ -1,4 +1,4 @@
-$game-font: bold 4em 'Share Tech Mono';
+$game-font: bold 7em 'Share Tech Mono';
 
 .pokemon-logo {
   width: 50%;
@@ -7,8 +7,8 @@ $game-font: bold 4em 'Share Tech Mono';
   display: block;
 }
 .pokeball {
-  width: 4.75%;
-  height: 4.75%;
+  width: 1em;
+  height: 1em;
   margin: 0 auto;
 }
 #on-rails {
@@ -19,7 +19,7 @@ $game-font: bold 4em 'Share Tech Mono';
   width: 50%;
   text-decoration: none;
   font: $game-font;
-  font-size: 3.5em;
+  font-size: 6em;
   text-align: center;
   color: black;
   margin: 0 auto;
