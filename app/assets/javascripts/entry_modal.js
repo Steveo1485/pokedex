@@ -1,8 +1,3 @@
-$(document).ready(function() {
-  $('.pokedex-img').click(pokedexEntryModal.displayModal)
-  $('.modal-close').click(pokedexEntryModal.closeModal)
-});
-
 var pokedexEntryModal = {
 
   displayModal: function() {
