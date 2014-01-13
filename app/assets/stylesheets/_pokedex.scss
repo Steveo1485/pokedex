@@ -17,7 +17,7 @@ $game-font: 'Share Tech Mono';
 h1#trainer-name {
   text-align: center;
   padding: 0.5%;
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: $game-font;
 }
 input {
   outline: none;
@@ -35,7 +35,7 @@ input {
   text-shadow: rgba(0,0,0,.4) 0 1px 0;
   color: white;
   font-size: 20px;
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: $game-font;
   text-decoration: none;
   vertical-align: middle;
 }
@@ -49,7 +49,7 @@ input:active {
 h2 {
   text-align: center;
   font-size: 1.25em;
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: $game-font;
 }
 .pokedex-entry:first-of-type {
   margin-left: 5px;
