@@ -1,25 +1,26 @@
-h1#starter-headline {
+.container {
   text-align: center;
-  font: bold italic 3em 'Share Tech Mono';
-}
-h2#choose-starter {
-  text-align: center;
-  font: bold 1.75em 'Share Tech Mono';
-}
-#starters-container {
-  width: 100%;
-}
-#starters {
-  text-align: center;
-  margin: 0 auto;
-}
-#starters img {
-  padding: 20px;
-}
-#quit {
-  text-align: center;
-  font: bold 0.75em 'Share Tech Mono';
-  color: black;
-  margin-top: 40px;
-  display: block;
+
+  #starter-headline {
+    font: bold italic 3em 'Share Tech Mono';
+  }
+  #choose-starter {
+    font: bold 1.75em 'Share Tech Mono';
+  }
+  #starters-container {
+    width: 100%;
+  }
+  #starters {
+    margin: 0 auto;
+
+    img {
+      padding: 20px;
+    }
+  }
+  #quit {
+    font: bold 1.25em 'Share Tech Mono';
+    color: black;
+    margin-top: 40px;
+    display: block;
+  }
 }
