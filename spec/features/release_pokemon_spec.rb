@@ -10,4 +10,11 @@ feature "Trainer can 'release' (delete) a Pokemon" do
     page.driver.browser.switch_to.alert.accept
     expect(page).to have_no_content("Bulbasaur")
   end
+
+  scenario "trainer clicks 'Release Pokemon' link and denies release", js: true do
+    visit trainer_pocket_monsters_path(trainer.id)
+    click_link("Release Bulbasaur")
+    page.driver.browser.switch_to.alert.dismiss
+    expect(page).to have_content("Bulbasaur")
+  end
 end
