@@ -23,7 +23,7 @@ feature 'Trainer' do
     end
 
     scenario "should allow user to start journey" do
-      fill_in("enter-name", with: "Lt. Surge")
+      fill_in("trainer_name", with: "Lt. Surge")
       click_button("Begin Your Journey")
       current_path.should eq(trainer_choose_starter_path(Trainer.last.id))
       Trainer.last.name.should eq("Lt. Surge")
