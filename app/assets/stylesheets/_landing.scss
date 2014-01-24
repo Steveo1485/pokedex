@@ -23,9 +23,9 @@ $game-font: bold 7em 'Share Tech Mono';
   text-align: center;
   color: black;
   margin: 0 auto;
-  border: 10px groove #B38F01;
+  border: 10px ridge #B38F01;
   border-radius: 30px;
   border-spacing: 50px;
-  background: -webkit-repeating-linear-gradient(#3464ae, #006aaf);
+  background: darken(#006aaf, 6.5%);
   display: block;
 }
