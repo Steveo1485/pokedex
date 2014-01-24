@@ -1,5 +1,5 @@
 $game-font: 'Share Tech Mono';
-$light-blue: #28AAFD;
+$nintendo-blue: #28AAFD;
 
 .container#pokedex{
   width: 100%;
@@ -12,8 +12,8 @@ $light-blue: #28AAFD;
   height: 40%;
   margin: 0 auto 0.5em;
   border: 10px ridge lighten(gray, 30%);
-  background-color: $light-blue;
-  background: -webkit-linear-gradient(top, $light-blue, darken($light-blue, 20%));
+  background-color: $nintendo-blue;
+  background: -webkit-linear-gradient(top, $nintendo-blue, darken($nintendo-blue, 20%));
 }
 h1#trainer-name {
   text-align: center;
@@ -23,11 +23,11 @@ h1#trainer-name {
 input {
   outline: none;
   background: #6eb2e0;
-  background: -webkit-gradient(linear, left top, left bottom, from($light-blue), to(#14567F));
-  background: -webkit-linear-gradient(top, $light-blue, #14567F);
-  background: -moz-linear-gradient(top, $light-blue, #14567F);
-  background: -ms-linear-gradient(top, $light-blue, #14567F);
-  background: -o-linear-gradient(top, $light-blue, #14567F);
+  background: -webkit-gradient(linear, left top, left bottom, from($nintendo-blue), to(#14567F));
+  background: -webkit-linear-gradient(top, $nintendo-blue, #14567F);
+  background: -moz-linear-gradient(top, $nintendo-blue, #14567F);
+  background: -ms-linear-gradient(top, $nintendo-blue, #14567F);
+  background: -o-linear-gradient(top, $nintendo-blue, #14567F);
   padding: 10px 20px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
