@@ -10,7 +10,7 @@ $game-font: 'Share Tech Mono';
   width: 40%;
   height: 40%;
   margin: 0 auto 0.5em;
-  border: 10px ridge #DDDDDD;
+  border: 10px ridge lighten(gray, 30%);
   background-color: #28AAFD;
   background: -webkit-linear-gradient(top, #28AAFD, #467BB8);
 }
