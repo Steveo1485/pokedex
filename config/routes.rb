@@ -6,7 +6,7 @@ Pokedex::Application.routes.draw do
 
   resources :trainers do
     get :choose_starter
-    resources :pocket_monsters, only: [:index, :create] do
+    resources :pocket_monsters, only: [:index, :create, :destroy] do
       post :starter
     end
   end
