@@ -20,4 +20,9 @@ class PocketMonstersController < ApplicationController
       redirect_to trainer_pocket_monsters_path(params[:trainer_id])
     end
   end
+
+  def destroy
+    PocketMonster.find(params[:id]).destroy
+    redirect_to trainer_pocket_monsters_path(params[:trainer_id])
+  end
 end
