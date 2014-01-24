@@ -17,4 +17,12 @@ feature "Trainer can 'release' (delete) a Pokemon" do
     page.driver.browser.switch_to.alert.dismiss
     expect(page).to have_content("Bulbasaur")
   end
+
+  scenario "trainer only releases 1 Pokemon when they have duplicates", js: true do
+    PocketMonster.create(trainer_id: trainer.id, species_id: 1)
+    visit trainer_pocket_monsters_path(trainer.id)
+    first(:link, "Release Bulbasaur").click
+    page.driver.browser.switch_to.alert.accept
+    expect(page).to have_content("No. 1 - Bulbasaur", :count => 1)
+  end
 end
