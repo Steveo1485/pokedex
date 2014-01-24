@@ -13,7 +13,7 @@ $light-blue: #28AAFD;
   margin: 0 auto 0.5em;
   border: 10px ridge lighten(gray, 30%);
   background-color: $light-blue;
-  background: -webkit-linear-gradient(top, $light-blue, #467BB8);
+  background: -webkit-linear-gradient(top, $light-blue, darken($light-blue, 20%));
 }
 h1#trainer-name {
   text-align: center;
