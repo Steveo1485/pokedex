@@ -52,12 +52,6 @@ h2 {
   font-size: 1.25em;
   font-family: $game-font;
 }
-.pokedex-entry:first-of-type {
-  margin-left: 5px;
-}
-.pokedex-entry:last-of-type {
-  margin-right: 5px;
-}
 .pokedex-entry {
   width: 17em;
   height: 17em;
@@ -67,12 +61,20 @@ h2 {
   margin: 5px;
   border: 4px groove #232323;
   border-style: groove;
+
+  :first-of-type {
+    margin-left: 5px;
+  }
+
+  :last-of-type {
+    margin-right: 5px;
+  }
 }
 img.pokedex-img {
   width: 75%;
   height: 75%;
   display: block;
-  margin: -15% auto auto;
+  margin: -10.5% auto auto;
   padding: 10px 10px 0px;
 }
 a.release-pokemon {
