@@ -11,13 +11,11 @@ $nintendo-blue: #28AAFD;
   width: 40%;
   height: 40%;
   margin: 0 auto 0.5em;
+  padding: 0.5%;
   border: 10px ridge lighten(gray, 30%);
   background-color: $nintendo-blue;
   background: -webkit-linear-gradient(top, $nintendo-blue, darken($nintendo-blue, 20%));
-}
-h1#trainer-name {
   text-align: center;
-  padding: 0.5%;
   font-family: $game-font;
 }
 input {
