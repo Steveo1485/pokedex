@@ -39,13 +39,14 @@ input {
   font-family: $game-font;
   text-decoration: none;
   vertical-align: middle;
-}
-input:hover {
-  color: #fff;
-}
-input:active {
-  border-top-color: #1b435e;
-  background: #1b435e;
+
+  :hover {
+    color: #fff;
+  }
+  :active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+  }
 }
 h2 {
   text-align: center;
@@ -61,7 +62,7 @@ h2 {
   margin: 5px;
   border: 4px groove #232323;
   border-style: groove;
-  
+
   :first-of-type {
     margin-left: 5px;
   }
