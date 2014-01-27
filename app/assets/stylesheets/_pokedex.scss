@@ -11,13 +11,11 @@ $nintendo-blue: #28AAFD;
   width: 40%;
   height: 40%;
   margin: 0 auto 0.5em;
+  padding: 0.5%;
   border: 10px ridge lighten(gray, 30%);
   background-color: $nintendo-blue;
   background: -webkit-linear-gradient(top, $nintendo-blue, darken($nintendo-blue, 20%));
-}
-h1#trainer-name {
   text-align: center;
-  padding: 0.5%;
   font-family: $game-font;
 }
 input {
@@ -39,24 +37,19 @@ input {
   font-family: $game-font;
   text-decoration: none;
   vertical-align: middle;
-}
-input:hover {
-  color: #fff;
-}
-input:active {
-  border-top-color: #1b435e;
-  background: #1b435e;
+
+  :hover {
+    color: #fff;
+  }
+  :active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+  }
 }
 h2 {
   text-align: center;
   font-size: 1.25em;
   font-family: $game-font;
-}
-.pokedex-entry:first-of-type {
-  margin-left: 5px;
-}
-.pokedex-entry:last-of-type {
-  margin-right: 5px;
 }
 .pokedex-entry {
   width: 17em;
@@ -65,21 +58,24 @@ h2 {
   background-color: #7F7F7F;
   background: -webkit-radial-gradient(#7F7F7F,#545454);
   margin: 5px;
-  border-color: #232323;
-  border-width: 4px;
+  border: 4px groove #232323;
   border-style: groove;
+
+  :first-of-type {
+    margin-left: 5px;
+  }
+  :last-of-type {
+    margin-right: 5px;
+  }
 }
-img.pokedex-img {
+.pokedex-img {
   width: 75%;
   height: 75%;
   display: block;
-  margin-top: -20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  padding-bottom: 0px;
+  margin: -10.5% auto auto;
+  padding: 10px 10px 0px;
 }
-a.release-pokemon {
+.release-pokemon {
   font-family: $game-font;
   color: #fff;
 }
